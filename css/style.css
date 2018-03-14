@@ -1,6 +1,14 @@
 body{
 	font-family: Arial;
 	background: #f1f1f1;
+	/*overflow-y: hidden;*/
+}
+
+/*Para esconder la barra lateral,
+la horizontal no se esconde porque si
+nos sale es que algo estamos haciendo mal*/
+#element::-webkit-scrollbar { 
+    display: none; 
 }
 body section{
     padding: 20px;
@@ -33,42 +41,58 @@ nav{
 	position: absolute;
 	top: 200px; /*172*/
 	background-color: green;
-	
 	width:100%;
 	left:0;
+
 }
 nav ul{
-    list-style-type: none;
-    margin: 0;
+	margin-top:0;
+	margin-bottom: 0;
+	display: flex;
     padding: 0;
-    overflow: hidden;
     background-color: #333;
 }
-/*nav li{
 
-	display: inline-block;
-	padding: 10px 25px 10px 25px;
-	background-color: black;
-	color: white;
-
-}*/
 nav li{
-
-
+	list-style-type: none;
+	padding: 10px;
+  	text-align: center;
+  	box-sizing: border-box;
+  	background-color: #9fa8a3;
+  	flex:1;
+  	/*border: 5px solid #ffcc5c;*/
+}
+nav li:hover{
+	background-color: #c5d5cb
 }
 nav li a{
-	display: block;
-	background-color: blue;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none
+	text-decoration: none;
+	color: black;
 }
 
-nav li a:hover{
-	background-color: red;
+.ordenacion{
+	display: flex;
+	border:1px solid #9fa8a3;
+	padding: 0;
+}
+.ordenacion>li:nth-child(1){
+	margin-left: 20%;
+}
+.ordenacion>li:nth-child(1) input{
+	width:300px;
 }
 
+.ordenacion>li:nth-child(2){
+	font-size: 13px;
+}
+.ordenacion li{
+	list-style-type: none;
+	padding: 10px;
+  	text-align: center;
+  	box-sizing: border-box;
+  	flex: 1;
+  	
+}
 
 
 header ul{
@@ -78,23 +102,9 @@ header ul{
 body > section{
   	display: inline-block;
 }
-body > section > ul{
-	list-style: none;
-}
-section li{
-	display: inline-block;
-	margin-left: 2em;
-	
-}
-body > section > ul #filtro{
-	background-color: green;
-	margin-left: 17em;
 
-}
-body > section > ul #busqueda{
-	background-color: red;
 
-}
+
 
 .contenido{
 	margin-top: 240px;
