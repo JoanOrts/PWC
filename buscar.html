@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <meta charset="UTF-8">
+  <title>Buscar</title>
+  <link rel="stylesheet" href="style.css">
+  <link type="text/css" rel="stylesheet" href="fontello/css/icon.css">
+</head>
+
+<body>
+
+  <form class="msform2" action="buscar.html" method="get">
+    <div class="msform2Div">
+        <h3>Búsqueda:</h3>
+        <input type="text" name="Titulo" pattern="[A-Za-z]+[A-Za-z0-9]{0,19}"  placeholder="Titulo" required autofocus>
+        <input type="text" name="Texto" placeholder="Texto" required>
+        <input type="text" name="Autor" placeholder="Autor" required/>
+        <p class="desde">Desde</p>
+        <input type="date" name="fecha"/>
+        <p class="desde">Hasta</p>
+        <input type="date" name="fecha"/>
+        <input type="submit" name="next" class="next action-button" value="Buscar" />
+    </div>
+  </form>
+  <footer>
+		<a href="acerca.html">Sobre nosotros</a>
+		<p>Práctica 1 de la Asigantura Programación de Cliente Web - Ingeniería Multimedia 2017-2018 - Copyright 2018</p>
+	</footer>
+  </body>
+</html>
