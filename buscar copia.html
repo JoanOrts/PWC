@@ -2,51 +2,30 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/styleJoan.css">
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 
 	<title>Buscar</title>
 </head>
 <body>
-
-
-	
-	<header>
-		<h1>Nuestra Web</h1>
-		<!-- <img src="images/header.jpg"> -->
-	</header>
-		<input type="checkbox" id="checkboxmenu">
-	<nav>
-		<ul>
-			<li><a href="pagina1.html">Pagina1</a></li>
-			<li><a href="pagina2.html">Pagina2</a></li>
-			<li><a href="pagina3.html">Pagina3</a></li>
-			<li><a href="pagina4.html">Pagina4</a></li>
-			<li><a href="pagina5.html">Pagina5</a></li>
-		</ul>
-		<!-- <ul>
-			<li><label for="checkboxmenu">&equiv;</label></li>
-			<li><a href="pagina1.html"><span class="icon-home"></span><span>Pagina1</span></a></li>
-		</ul> -->
-	</nav>
-
-	
-	
 	<section class="contenido">
-		<form action="resultado.hmtl">
-			<label for="nombre">Nombre<input name="nombre"type="text" placeholder="Nombre de la receta"></label>
-			<label for="ingredientes">Ingredientes<input type="text" name="ingredientes" placeholder="Ingredientes"></label>
-			<label for="tiempomin">Tiempo de<input type="number" name="tiempomin" value="0"> a <input type="number" name="tiempomax" value="0"></label>
-			<label for="dificultad">Dificultad<select name="dificultad">
-				<option value="facil" selected="selected">Fácil</option>
-				<option value="normal">Normal</option>
-				<option value="difícil">Difícil</option>
-			</select></label>
-			<label for="comensales">Comensales<input type="number" name="comensales" value="1"
-				min="1" max="15"></label>
-			<label for="autor">Autor<input type="text" name="autor" placeholder="Autor"></label>
-			<input type="submit">
-		</form>
+		<form class="msform2" action="resultado.html" method="get">
+	    <div class="msform2Div">
+	        <h3>Búsqueda:</h3>
+	        <input type="text" name="Nombre" pattern="[A-Za-z]+[A-Za-z0-9]{0,20}"  placeholder="Nombre de la receta" required autofocus>
+	        <input type="text" name="Ingredientes" placeholder="Ingredientes" required>
+					<label for="tiempomin">Tiempo de preparación desde <input type="number" name="tiempomin" value="0"> hasta <input type="number" name="tiempomax" value="0"></label>
+					<label for="dificultad">Dificultad<select name="dificultad">
+						<option value="facil" selected="selected">Fácil</option>
+						<option value="normal">Normal</option>
+						<option value="difícil">Difícil</option>
+					</select></label>
+					<label for="comensales">Comensales<input type="number" name="comensales" value="1"
+						min="1" max="15"></label>
+					<input type="text" name="Autor" placeholder="Autor" required/>
+					<input type="submit" name="next" class="next action-button" value="Buscar"/>
+	    </div>
+	  </form>
 	</section>
 
 	<footer>
@@ -55,5 +34,5 @@
 		<p>&copy; <time datetime="2018-03">marzo-2018</time>
 	</footer>
 </body>
-	
+
 </html>
