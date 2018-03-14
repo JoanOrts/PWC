@@ -36,7 +36,7 @@
   width: 100px;
   background: #c5d5cb;
   font-weight: bold;
-  color: #9fa8a3;
+  color: black;
   border: 0 none;
   border-radius: 1px;
   cursor: pointer;
@@ -55,4 +55,45 @@
   margin: 50px auto;
   text-align: center;
   position: relative;
+}
+
+.msform2Div {
+  background: #9fa8a3;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 15px 30px;
+  box-sizing: border-box;
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.msform2 input, .msform2 textarea, .msform2 select {
+  outline: none;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: black;
+  font-size: 13px;
+}
+
+.msform2 .action-button {
+  width: 100px;
+  background: #c5d5cb;
+  font-weight: bold;
+  color: black;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+
+.msform2 .action-button:hover, .msform2 .action-button:focus {
+  box-shadow: 0 0 0 2px white;
 }
