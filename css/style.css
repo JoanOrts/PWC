@@ -1,0 +1,227 @@
+body{
+	font-family: Arial;
+	background: #f1f1f1;
+}
+body section{
+    padding: 20px;
+}
+
+header {
+	width: 100%;
+    background: white;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 200px;
+    text-align: center;
+    
+
+    background-image: url('images/header.jpg')
+}
+header h1{
+	padding: 60px 0 0 0;
+}
+.textoheader{
+
+}
+/*header img{
+	width:100%;
+	height: 200px;
+}*/
+
+nav{
+	position: absolute;
+	top: 200px; /*172*/
+	background-color: green;
+	
+	width:100%;
+	left:0;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+/*nav li{
+
+	display: inline-block;
+	padding: 10px 25px 10px 25px;
+	background-color: black;
+	color: white;
+
+}*/
+nav li{
+
+
+}
+nav li a{
+	display: block;
+	background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none
+}
+
+nav li a:hover{
+	background-color: red;
+}
+
+
+
+header ul{
+	list-style: none;
+	display: inline-block;
+}
+body > section{
+  	display: inline-block;
+}
+body > section > ul{
+	list-style: none;
+}
+section li{
+	display: inline-block;
+	margin-left: 2em;
+	
+}
+body > section > ul #filtro{
+	background-color: green;
+	margin-left: 17em;
+
+}
+body > section > ul #busqueda{
+	background-color: red;
+
+}
+
+.contenido{
+	margin-top: 240px;
+}
+.articleindex{
+     background-color: #ddd;
+     padding: 20px;
+     margin-top: 20px;
+}
+
+.articleindex img{
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/*.logo{
+	color:#00000000;
+	float: left;
+	padding-left: 25px;
+	font-size: 16px;
+	font-weight: bold;
+}
+nav{
+	background-color: #ffffffff;
+	color: #00000000;
+	list-style: none;
+	text-align: right;
+	padding: 20px 0 0 0;
+}
+
+nav li{
+	display: inline-block;
+	padding: 0 25px 0 25px;
+}*/
+
+/*body>nav>ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	max-height: 1.5em;
+	overflow: hidden;
+
+	transition:max-height 1s ease-in-out;
+}
+
+	body>nav>ul>li>a{
+		display: block;
+
+	}
+	body>nav>ul>li{
+		display: block;
+		padding: .2em 0 .2em .2em;
+		text-decoration: none;
+		font-weight: bold;
+	}
+
+	body>nav>ul>li>a:hover{
+		background-color: #555555; 
+	}
+
+	body>nav>ul>li:first-of-type>label{
+		font-weight: bold;
+		margin-left:2em;
+		display: inline-block;
+		font-size: 1.5em;
+		cursor: pointer;
+
+		transition: transform 1s ease-in-out;
+	}*/
+
+#checkboxmenu{
+	display: none;
+}
+
+#checkboxmenu:checked+ul{ /*cuando este checked va a cambiar el valor de su hermano ul*/
+	max-height: 20em; /*da igual no va a llegar*/
+}
+
+	#checkboxmenu:checked+ul>li:first-of-type>label{
+		transform: rotate(90deg);
+	}
+#paginacion{
+	padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+#paginacion a{
+	text-decoration: none;
+	color:inherit;
+	background-color: red;
+	padding: 0.2em;
+
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+
+
+
+/*MEDIA QUERIES*/
+@media all and (min-width: 480px){
+	body>nav>ul>li{
+		display: inline-block;
+	}
+	body>nav>ul>li:first-of-type>label{
+		display: none;
+	}
+	body>nav>ul>li>a>span:nth-of-type(2){
+		display: none;
+	}
+}
+
+@media all and (min-width: 500px;){
+
+}
+
+@media all and (min-width: 640px;){
+	body>nav>ul>li>a>span:nth-of-type(2){
+		display: inline-block;
+	}
+}
+
+
