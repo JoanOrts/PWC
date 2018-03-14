@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Registro</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/styleJoan.css">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
 
@@ -11,12 +11,12 @@
   <form id="msformLogin" action="index.html" method="get">
     <div>
       <p>*Todos los campos son obligatorios</p>
-      <input type="text" name="nombreusu" pattern="[A-Za-z]+[A-Za-z0-9]{0,19}"  placeholder="Nombre de usuario*"  autofocus>
+      <input type="text" name="nombreusu" pattern="[A-Za-z]+[A-Za-z0-9]{0,15}"  placeholder="Nombre de usuario*"  autofocus>
       <input type="text" name="nombre" placeholder="Nombre*" required>
       <input type="text" name="apellidos" placeholder="Apellidos*" required/>
       <input type="email" name="email" placeholder="Email*"  required/>
-      <input type="password" pattern="[A-Za-z0-9_-]{0,120}"  name="pass" placeholder="Contraseña*" required/>
-      <input type="password" name="cpass" pattern="[A-Za-z0-9_-]{0,120}" placeholder="Confirmar Contraseña*" required/>
+      <input type="password" pattern="[A-Za-z0-9_-]{0,20}"  name="pass" placeholder="Contraseña*" required/>
+      <input type="password" name="cpass" pattern="[A-Za-z0-9_-]{0,20}" placeholder="Confirmar Contraseña*" required/>
       <input type="submit" name="next" class="next action-button" value="Registrar" />
     </div>
   </form>
