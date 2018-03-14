@@ -12,17 +12,19 @@
 
 	
 	<header>
-		<h1>Nuestra Web</h1>
+		<h1>COOKIDO</h1>
+		<p>Comparte y aprende recetas de cocina.</p>
 		<!-- <img src="images/header.jpg"> -->
 	</header>
 		<input type="checkbox" id="checkboxmenu">
 	<nav>
 		<ul>
-			<li><a href="pagina1.html">Pagina1</a></li>
-			<li><a href="pagina1.html">Pagina1</a></li>
-			<li><a href="pagina1.html">Pagina1</a></li>
-			<li><a href="pagina1.html">Pagina1</a></li>
-			<li><a href="pagina1.html">Pagina1</a></li>
+			<li><i class="demo-icon icon-home"><a href="index.html">Inicio</a></li>
+			<li><a href="buscar.html">Buscar</a></li>
+			<li><a href="login.html">Login</a></li>
+			<li><a href="registro.html">Registrarse</a></li>
+			<li><a href="logout.html">Logout</a></li>
+			<li><a href="nueva-receta.html">Nueva Receta</a></li>
 		</ul>
 		<!-- <ul>
 			<li><label for="checkboxmenu">&equiv;</label></li>
@@ -33,16 +35,15 @@
 	
 	
 	<section class="contenido">
-		<ul>
+		<ul class="ordenacion">
+		<li id="busqueda"><input type="text" name="busquedaindex" placeholder="Buscar"></li>
 		<li id="filtro"><label for="ordenindex">Ordenar por:</label>
-			<br>
 			<select name="ordenindex" id="ordenindex">
 			<option value="Ascendente">Ascendente</option>
 			<option value="Descendente">Descendente</option>
 			<option value="Valoracion">Valoración</option>
 			<option value="Fecha">Fecha</option>
 		</select></li>
-		<li id="busqueda"><input type="text" name="busquedaindex" placeholder="Buscar"></li>
 	</ul>
 		<article class="articleindex">
 			<a href="receta.html"><h3>Sobrasada Vegetal</h3></a>
@@ -125,8 +126,11 @@
 
 	<footer>
 		<a href="acerca.html">Sobre nosotros</a>
+		<a href="#">Volver al inicio de la página</a>
 		<p>Práctica 1 de la Asigantura Programación de Cliente Web - Ingeniería Multimedia 2017-2018 - Copyright 2018</p>
 		<p>&copy; <time datetime="2018-03">marzo-2018</time>
+		<p>Joan Orts Pérez - jop12@alu.ua.es</p>
+		<p>Amador Blasco Torres - abt25@alu.ua.es</p>
 	</footer>
 </body>
 	
