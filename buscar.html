@@ -1,30 +1,49 @@
-<!DOCTYPE html>
-<html lang="zxx">
+<!doctype html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Buscar</title>
-  <link rel="stylesheet" href="style.css">
-  <link type="text/css" rel="stylesheet" href="fontello/css/icon.css">
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/fontello/css/icon.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+	<title>Buscar</title>
 </head>
-
 <body>
+		<form class="formulariobusqueda" action="resultado.html" method="get">
+	    <div class="formulariobusquedacampos">
+	        <h3>Búsqueda</h3>
+	        <input type="text" name="Nombre" pattern="[A-Za-z]+[A-Za-z0-9]{0,20}"  placeholder="Nombre de la receta" required autofocus>
+	        <input type="text" name="Ingredientes" placeholder="Ingredientes" required>
+					<input type="number" name="tiempomin" placeholder="Tiempo de preparación desde..." min="0">
+					<input type="number" name="tiempomax" placeholder="...hasta" min="0">
+					<input type="number" name="comensales" placeholder="Número de comensales" min="1" max="15">
+					<input type="text" name="Autor" placeholder="Autor" required/>
+					<p class="dificultad">Dificultad</p>
+					<select name="dificultad">
+						<option value="facil" selected="selected">Fácil</option>
+						<option value="normal">Normal</option>
+						<option value="difícil">Difícil</option>
+					</select>
+					<input type="submit" name="next" class="next action-button" value="Buscar"/>
+	    </div>
+	  </form>
 
-  <form class="msform2" action="buscar.html" method="get">
-    <div class="msform2Div">
-        <h3>Búsqueda:</h3>
-        <input type="text" name="Titulo" pattern="[A-Za-z]+[A-Za-z0-9]{0,19}"  placeholder="Titulo" required autofocus>
-        <input type="text" name="Texto" placeholder="Texto" required>
-        <input type="text" name="Autor" placeholder="Autor" required/>
-        <p class="desde">Desde</p>
-        <input type="date" name="fecha"/>
-        <p class="desde">Hasta</p>
-        <input type="date" name="fecha"/>
-        <input type="submit" name="next" class="next action-button" value="Buscar" />
-    </div>
-  </form>
-  <footer>
-		<a href="acerca.html">Sobre nosotros</a>
-		<p>Práctica 1 de la Asigantura Programación de Cliente Web - Ingeniería Multimedia 2017-2018 - Copyright 2018</p>
-	</footer>
-  </body>
+	<div class="footerseccion">
+    <footer>
+      <div class="footerinfo">
+        <h3>CONTACTO</h3>
+        <p><a href="acerca.html">Sobre nosotros</a></p>
+        <p><a href="#">Volver al inicio de la página</a></p>
+        <a class="iconito" href=""><i class="icon-twitter"></i></a>
+        <a class="iconito" href=""><i class="icon-facebook-rect"></i></a>
+        <a class="iconito" href=""><i class="icon-instagram-filled"></i></a>
+  		  <p>Práctica 1 de la Asigantura Programación de Cliente Web</p>
+        <p>Ingeniería Multimedia 2017-2018</p>
+        <p>© Copyright 2018</p>
+      </div>
+  	</footer>
+ </div>
+
+</body>
+
 </html>
