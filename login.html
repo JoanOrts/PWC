@@ -3,23 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <title>Login</title>
-  <link rel="stylesheet" type="text/css" href="css/styleJoan.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/fontello/css/icon.css">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
 
 <body>
 
-  <form id="msformLogin" action="index.html" method="get">
+  <form id="formulariologin" action="index.html" method="get">
     <div>
       <p>*Todos los campos son obligatorios</p>
-      <input type="text" name="nombreusu" pattern="[A-Za-z]+[A-Za-z0-9]{0,15}"  placeholder="Nombre de usuario*" required autofocus>
-      <input type="password" pattern="[A-Za-z0-9_-]{0,20}"  name="pass" placeholder="Contraseña*">
+      <input type="text" name="username" pattern="[A-Za-z]+[A-Za-z0-9]{0,15}"  placeholder="Nombre de usuario*" required autofocus>
+      <input type="password" name="contrasena" pattern="[A-Za-z0-9_-]{0,20}" placeholder="Contraseña*">
      <input type="submit" name="next" class="next action-button" value="Enviar" />
     </div>
   </form>
-  <footer>
-		<a href="acerca.html">Sobre nosotros</a>
-		<p>Práctica 1 de la Asigantura Programación de Cliente Web - Ingeniería Multimedia 2017-2018 - Copyright 2018</p>
-	</footer>
+
+  <div class="footerseccion">
+    <footer>
+      <div class="footerinfo">
+        <h3>CONTACTO</h3>
+        <p><a href="acerca.html">Sobre nosotros</a></p>
+        <p><a href="#">Volver al inicio de la página</a></p>
+        <a class="iconito" href=""><i class="icon-twitter"></i></a>
+        <a class="iconito" href=""><i class="icon-facebook-rect"></i></a>
+        <a class="iconito" href=""><i class="icon-instagram-filled"></i></a>
+  		  <p>Práctica 1 de la Asigantura Programación de Cliente Web</p>
+        <p>Ingeniería Multimedia 2017-2018</p>
+        <p>© Copyright 2018</p>
+      </div>
+  	</footer>
+ </div>
+
  </body>
 </html>

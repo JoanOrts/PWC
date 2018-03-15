@@ -1,14 +1,18 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
 body{
-	font-family: Arial;
+	font-family: montserrat, arial, verdana;
 	background: #f1f1f1;
 	/*overflow-y: hidden;*/
 }
 
+body {margin: 0px;padding-top:0;}
+
 /*Para esconder la barra lateral,
 la horizontal no se esconde porque si
 nos sale es que algo estamos haciendo mal*/
-#element::-webkit-scrollbar { 
-    display: none; 
+#element::-webkit-scrollbar {
+    display: none;
 }
 body section{
     padding: 20px;
@@ -22,7 +26,7 @@ header {
     left: 0;
     height: 200px;
     text-align: center;
-    
+
 
     background-image: url('images/header.jpg')
 }
@@ -91,7 +95,7 @@ nav li a{
   	text-align: center;
   	box-sizing: border-box;
   	flex: 1;
-  	
+
 }
 
 
@@ -163,7 +167,7 @@ nav li{
 	}
 
 	body>nav>ul>li>a:hover{
-		background-color: #555555; 
+		background-color: #555555;
 	}
 
 	body>nav>ul>li:first-of-type>label{
@@ -201,17 +205,66 @@ nav li{
 
 }
 
+/*FOOTER*/
+
 footer {
-    padding: 20px;
+    /*padding: 20px;
     text-align: center;
-    background: #ddd;
+    background: #9fa8a3;
     margin-top: 20px;
-    margin: 0 auto;
+    margin: 0 auto;*/
+		margin-bottom: 0;
+    margin-left: 0;
+    width: 100%;
+  	background:#9fa8a3;
+		text-align: center;
+	  margin:0 auto;
+}
+
+.footerseccion{
+	display: inline-block;
+	display: flex;
+	margin-top: 3%;
+}
+
+.footerinfo{
+	margin-bottom: 2%;
+}
+
+/*Icons red socials*/
+
+.iconito{
+  color: #c5d5cb;
+}
+
+.iconito:hover{
+  color: #e3e0cf;
+}
+
+.footerinfo a{
+  text-decoration: none;
+  color: #c5d5cb;
+}
+
+.footerinfo a:hover {
+  color: #e3e0cf;
 }
 
 
-
 /*MEDIA QUERIES*/
+
+@media screen and (max-width: 800px){
+
+}
+@media screen and (max-width: 600px){
+
+	#formulariologin {
+	  width: 90%;
+
+	}
+
+}
+
 @media all and (min-width: 480px){
 	body>nav>ul>li{
 		display: inline-block;
@@ -234,4 +287,118 @@ footer {
 	}
 }
 
+/*Formulari Registre y Login*/
+#formulariologin {
+  width: 60%;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+}
 
+#formulariologin div {
+  background: #9fa8a3;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 15px 30px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#formulariologin input, #formulariologin textarea {
+  outline: none;
+  padding: 15px;
+  border: 3px solid #c5d5cb;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: black;
+  font-size: 13px;
+}
+
+#formulariologin .action-button {
+  width: 100px;
+  background: #c5d5cb;
+  font-weight: bold;
+  color: black;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+
+#formulariologin .action-button:hover, #formulariologin .action-button:focus {
+  box-shadow: 0 0 0 2px white;
+}
+
+/*Formulari búsqueda*/
+
+.formulariobusqueda {
+  width: 60%;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+}
+
+.formulariobusquedacampos {
+  background: #9fa8a3;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 15px 30px;
+  box-sizing: border-box;
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.formulariobusqueda input, .formulariobusqueda textarea, .formulariobusqueda select {
+  outline: none;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: black;
+  font-size: 13px;
+}
+
+.formulariobusqueda .action-button {
+  width: 100px;
+  background: #c5d5cb;
+  font-weight: bold;
+  color: black;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+
+.formulariobusqueda p {
+  margin-bottom: 5%;
+	font-weight: bold;
+}
+
+.formulariobusqueda .action-button:hover, .formulariobusqueda .action-button:focus {
+  box-shadow: 0 0 0 2px white;
+}
+
+.formulariobusqueda h3{
+	font-size:17px;
+	text-align: center;
+}
+
+.dificultad{
+  font-size: 15px;
+  float:left;
+}
+
+/*ACERCA DE------- */
