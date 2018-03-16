@@ -81,7 +81,6 @@ body>header{
   float:right;
 
 }
-<<<<<<< HEAD
 /*----------------- ORDENACIÓN ---------------- */
 .ordenacion{
   margin: 20px 30px 0 30px;
@@ -129,7 +128,7 @@ body>header{
     margin-right: auto;
     object-fit: cover;
     
-}*
+}
 .articleindex p{
   text-align: center;
 }
@@ -138,9 +137,6 @@ body>header{
   text-decoration: none;
   color: black;
 }
-=======
-
->>>>>>> b9cf785099d6433fe5690fc4d660362f6a51ad0d
 /*-----------------FORMULARI REGISTRE I LOGIN------------------*/
 
 #formulariologin {
@@ -293,7 +289,6 @@ body>header{
 .amador{
   width: 20%;
 }
-<<<<<<< HEAD
 /*------------- PAGINACIÓ ------------*/
 
 #paginacion{
@@ -314,8 +309,6 @@ body>header{
 #paginacion a:hover{
   background-color: #c5d5cb;
 }
-=======
->>>>>>> b9cf785099d6433fe5690fc4d660362f6a51ad0d
 
 /*-------------------------------FOOTER--------------------------------*/
 
@@ -427,4 +420,23 @@ footer {
     width: 80%;
   }
 
+
+  .articleindex img{
+    height: 200px;
+    width: 300px;
+    padding: 0;
+    align-self: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    
+  }
+
+  .ordenacion>li:nth-child(1) input{
+  width:150px;
+  }
+  #paginacion a{
+    font-size: 0.8em;
+  }
 }
