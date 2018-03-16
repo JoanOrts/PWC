@@ -129,7 +129,11 @@ body>header{
 }
 
 #formulariologin .action-button:hover, #formulariologin .action-button:focus {
-  box-shadow: 0 0 0 2px white;
+  box-shadow: 0 0 0 2px #e3e0cf;
+}
+
+#formulariologin input:hover, #formulariologin input:focus {
+  box-shadow: 0 0 0 3px #e3e0cf;
 }
 
 /*---------------------FORMULARI BUSQUEDA---------------------------------*/
@@ -184,7 +188,15 @@ body>header{
 }
 
 .formulariobusqueda .action-button:hover, .formulariobusqueda .action-button:focus {
-  box-shadow: 0 0 0 2px white;
+  box-shadow: 0 0 0 2px #e3e0cf;
+}
+
+.formulariobusqueda input:hover, .formulariobusqueda input:focus {
+  box-shadow: 0 0 0 3px #e3e0cf;
+}
+
+.formulariobusqueda select:hover, .formulariobusqueda select:focus {
+  box-shadow: 0 0 0 3px #e3e0cf;
 }
 
 .dificultad{
