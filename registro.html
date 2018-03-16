@@ -36,12 +36,12 @@
   <form id="formulariologin" action="index.html" method="get">
     <div>
       <p>*Todos los campos son obligatorios</p>
-      <input type="text" name="username" pattern="[A-Za-z]+[A-Za-z0-9]{0,15}"  placeholder="Nombre de usuario*"  autofocus>
+      <input type="text" name="username" pattern="[A-Za-z]+[A-Za-z0-9]{6,20}"  placeholder="Nombre de usuario*"  autofocus>
       <input type="text" name="nombre" placeholder="Nombre*" required>
       <input type="text" name="apellidos" placeholder="Apellidos*" required/>
       <input type="email" name="email" placeholder="Email*"  required/>
-      <input type="password" name="contrasena" pattern="[A-Za-z0-9_-]{0,20}" placeholder="Contraseña*" required/>
-      <input type="password" name="repcontrasena" pattern="[A-Za-z0-9_-]{0,20}" placeholder="Confirmar Contraseña*" required/>
+      <input type="password" name="contrasena" pattern="[A-Za-z0-9_-]{8,20}" placeholder="Contraseña*" required/>
+      <input type="password" name="repcontrasena" pattern="[A-Za-z0-9_-]{8,20}" placeholder="Confirmar Contraseña*" required/>
       <input type="submit" name="next" class="next action-button" value="Registrar" />
     </div>
   </form>
