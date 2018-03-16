@@ -7,7 +7,7 @@ body {margin: 0px;padding-top:0;}
 body,html{
   font-family: montserrat;
   font-weight:normal;
-  background-color: #dedede;
+  background-color: #c5d5cb;;
 }
 
 body>header{
@@ -92,7 +92,7 @@ body>header{
   align-items: center;
 }
 .ordenacion>li:nth-child(1){
-  
+
 }
 .ordenacion>li:nth-child(1) input{
   width:300px;
@@ -109,17 +109,30 @@ body>header{
     box-sizing: border-box;
     display: inline-block;
 }
+
 /*----------------- RECETAS INDEX ----------------*/
 
 .articleindex{
-    margin:0 30px;
+    /*margin:0 30px;
      background-color: #e3e09f;
+     padding: 20px;
+     margin-top: 20px;*/
+
+     background: #9fa8a3;;
+     border: 0 none;
+     border-radius: 3px;
+     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+     padding: 15px 30px;
+     box-sizing: border-box;
+     width: 80%;
+     margin: 0 auto;
+     position: relative;
      padding: 20px;
      margin-top: 20px;
 }
 
 .articleindex img{
-    height: 300px;
+    /*height: 300px;
     width: 500px;
     padding: 0;
     align-self: center;
@@ -127,8 +140,22 @@ body>header{
     margin-left: auto;
     margin-right: auto;
     object-fit: cover;
-    
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);*/
+
+    display: block;
+    margin-left: 4%;
+    margin-right: auto;
+    width: 193%;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+
 }
+
+.contenedor {
+  position: relative;
+  width: 50%;
+}
+
 .articleindex p{
   text-align: center;
 }
@@ -299,15 +326,15 @@ body>header{
 }
 #paginacion a{
   text-decoration: none;
-  color:inherit;
-  background-color: #9fa8a3;
+  color:inherit;/*
+  background-color: #9fa8a3;*/
   padding: 0.2em 0.6em;
   display: inline-block;
   font-size: 0.9em;
 
 }
 #paginacion a:hover{
-  background-color: #c5d5cb;
+  background-color: #e3e0cf;
 }
 
 /*-------------------------------FOOTER--------------------------------*/
@@ -420,8 +447,12 @@ footer {
     width: 80%;
   }
 
+  .articleIndex{
+    width:145%;
+  }
 
-  .articleindex img{
+
+  /*.articleindex img{
     height: 200px;
     width: 300px;
     padding: 0;
@@ -430,8 +461,8 @@ footer {
     margin-left: auto;
     margin-right: auto;
     object-fit: cover;
-    
-  }
+
+  }*/
 
   .ordenacion>li:nth-child(1) input{
   width:150px;
