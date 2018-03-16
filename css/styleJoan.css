@@ -1,0 +1,337 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+/*------------------GENERAL---------------------------*/
+
+body {margin: 0px;padding-top:0;}
+
+body,html{
+  font-family: montserrat;
+  font-weight:normal;
+  background-color: #dedede;
+}
+
+body>header{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+/*------------------LOGO DE HEADER-----------------------*/
+
+.cookidologo{
+	align-self: center;
+	width: 20%;
+}
+
+/*------------------------BARRA DE NAVEGACION-------------------*/
+
+#barranavegacionid{
+  width:auto;
+  min-width:300px;
+  height: 45px;
+  margin:0 auto;
+  position:relative;
+  overflow:no-display;
+  color: #FFF;
+  background: #9fa8a3;
+  border-bottom: 2px solid #9fa8a3;
+}
+
+#barranavegacionid ul,#barranavegacionid li{
+
+  margin:0 auto;
+  padding:0 0;
+  list-style:none;
+  display: flex;
+}
+
+#barranavegacionid ul{
+  margin-left: 10px;
+  height:45px;
+  width:100%
+}
+
+#barranavegacionid li{
+	float:left;
+	display:inline;
+	position:relative;
+}
+
+#barranavegacionid a{
+	display: block;
+  font-size:120%;
+	line-height: 45px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: black;
+}
+#barranavegacionid li a:hover{
+  color: #e3e0cf;
+
+}
+#barranavegacionid input{display:none;margin:0 0;padding:0 0;width:80px;height:30px;opacity:0;cursor:pointer
+}
+#barranavegacionid label{
+	font:normal 20px Arial;
+  display:none;
+  width:35px;
+  height:36px;
+  line-height:36px;
+  text-align:center;
+  float:right;
+
+}
+
+/*-----------------FORMULARI REGISTRE I LOGIN------------------*/
+
+#formulariologin {
+  width: 60%;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+}
+
+#formulariologin div {
+  background: #9fa8a3;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 15px 30px;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#formulariologin input, #formulariologin textarea {
+  outline: none;
+  padding: 15px;
+  border: 3px solid #c5d5cb;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: black;
+  font-size: 13px;
+}
+
+#formulariologin .action-button {
+  width: 100px;
+  background: #c5d5cb;
+  font-weight: bold;
+  color: black;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+
+#formulariologin .action-button:hover, #formulariologin .action-button:focus {
+  box-shadow: 0 0 0 2px white;
+}
+
+/*---------------------FORMULARI BUSQUEDA---------------------------------*/
+
+.formulariobusqueda {
+  width: 60%;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+}
+
+.formulariobusquedacampos {
+  background: #9fa8a3;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 15px 30px;
+  box-sizing: border-box;
+  width: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.formulariobusquedacampos:not(:first-of-type) {
+  display: none;
+}
+
+.formulariobusqueda input, .formulariobusqueda textarea, .formulariobusqueda select {
+  outline: none;
+  padding: 15px;
+	border: 3px solid #c5d5cb;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: montserrat;
+  color: black;
+  font-size: 13px;
+
+}
+
+.formulariobusqueda .action-button {
+  width: 100px;
+  background: #c5d5cb;
+  font-weight: bold;
+  color: black;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+
+.formulariobusqueda .action-button:hover, .formulariobusqueda .action-button:focus {
+  box-shadow: 0 0 0 2px white;
+}
+
+.dificultad{
+  font-size: 15px;
+  float:left;
+  font-weight: bold;
+}
+
+/*---------------------------------ACERCA DE------------------------*/
+
+.descrip{
+  width: 96%;
+  margin:0 auto;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  position: relative;
+
+}
+
+.datos_curso{
+  margin-top:3%;
+  text-align: center;
+  padding: 2% 3%;
+  background-color: #9fa8a3;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.joan{
+  width: 20%;
+}
+
+.amador{
+  width: 20%;
+}
+
+/*-------------------------------FOOTER--------------------------------*/
+
+footer {
+		margin-bottom: 0;
+    margin-left: 0;
+    width: 100%;
+  	background:#9fa8a3;
+		text-align: center;
+	  margin:0 auto;
+}
+
+.footerseccion{
+	display: inline-block;
+	display: flex;
+	margin-top: 3%;
+}
+
+.footerinfo{
+	margin-bottom: 2%;
+}
+
+/*--------ICONS------------*/
+
+.iconito{
+  color: #c5d5cb;
+}
+
+.iconito:hover{
+  color: #e3e0cf;
+}
+
+.footerinfo a{
+  text-decoration: none;
+  color: #c5d5cb;
+}
+
+.footerinfo a:hover {
+  color: #e3e0cf;
+}
+
+/*---------------------------MEDIA QUERIS---------------------------*/
+
+@media screen and (max-width: 800px){
+
+  .formulariobusqueda {
+    width: 100%;
+  }
+  .formulariobusquedacampos {
+    width: 80%;
+  }
+
+}
+@media screen and (max-width: 600px){
+
+	#formulariologin {
+	  width: 90%;
+	}
+
+  .cookidologo{
+  align-self: center;
+  width: 50%;
+  }
+
+  #barranavegacionid{
+    position:relative;
+    color: #FFF;
+    background: #9fa8a3;
+    border-bottom: 0px solid #222;
+  }
+
+  #barranavegacionid ul{
+    top:100%;
+    left:0;
+    height:auto;
+    display:none;
+    position:absolute;
+    z-index:3;
+    background: #9fa8a3;
+    color: #fff;
+    background-color: #9fa8a3;
+  }
+
+  #barranavegacionid li{
+    font:normal 90% Arial;
+    width:auto;
+    display:block;
+    float:none;
+  }
+
+  #barranavegacionid input,#barranavegacionid label{
+    margin:0  2%;
+    float:right;
+    display:block;
+    position:absolute;
+  }
+
+  #barranavegacionid input{z-index:10;}
+
+  #barranavegacionid input:checked ~ ul{display:block}
+
+  .fa-bars {
+    color: black;
+  }
+
+  .formulariobusqueda {
+    width: 100%;
+  }
+  .formulariobusquedacampos {
+    width: 80%;
+  }
+
+}
