@@ -22,7 +22,7 @@ body section{
 
 /* HEADER */
 header {
-	width: 100%; 
+	width: 100%;
   position: absolute;
   top:0;
   left: 0;
@@ -36,16 +36,14 @@ header a{
 header ul{
   text-align: center;
   display: inline-block;
-  border-radius: 25px;
-  background:rgba(255,255,255, 0.4);
-  padding-right: 10%; 
+  padding-right: 10%;
   margin-top:40px;
   margin-bottom: 100px;
 }
 header ul li{
   list-style-type: none;
   display: inline-block;
-    
+
 }
 header ul li img{
   margin-bottom: 90%;
@@ -223,11 +221,6 @@ nav li{
 /*FOOTER*/
 
 footer {
-    /*padding: 20px;
-    text-align: center;
-    background: #9fa8a3;
-    margin-top: 20px;
-    margin: 0 auto;*/
 		margin-bottom: 0;
     margin-left: 0;
     width: 100%;
@@ -418,3 +411,11 @@ footer {
 }
 
 /*ACERCA DE------- */
+
+.acercade {
+	width: 60%;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+	margin: none;
+}

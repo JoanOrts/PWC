@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Login</title>
+  <title>Nueva Receta</title>
   <link rel="stylesheet" type="text/css" href="css/styleJoan.css">
   <link type="text/css" rel="stylesheet" href="css/fontello/css/icon.css">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -33,12 +33,27 @@
   		</nav>
 	</div>
 
-  <form id="formulariologin" action="index.html" method="get">
-    <div>
+  <form class="formulariobusqueda" action="index.html" method="get">
+    <div class="formulariobusquedacampos">
       <p>*Todos los campos son obligatorios</p>
-      <input type="text" name="username" pattern="[A-Za-z]+[A-Za-z0-9]{6,20}"  placeholder="Nombre de usuario*" required autofocus>
-      <input type="password" name="contrasena" pattern="[A-Za-z0-9_-]{8,20}" placeholder="Contraseña*">
-     <input type="submit" name="next" class="next action-button" value="Enviar" />
+      <input type="text" name="nombre"  placeholder="Nombre de la receta" required autofocus>
+      ​<textarea name="elaboracion" rows="10" cols="70" placeholder="Elaboración de la receta"></textarea>
+      <input type="number" name="comensales" placeholder="Número de comensales" min="1" max="15">
+      <input type="number" name="tiempoelaboracion" placeholder="Tiempo de elaboración (min)">
+          <input type="text" name="Autor" placeholder="Autor" required/>
+          <p class="dificultad">Dificultad</p>
+          <select name="dificultad">
+            <option value="baja" selected="selected">Baja</option>
+            <option value="media">Media</option>
+            <option value="alta">Alta</option>
+          </select>
+      <input list="listaing" placeholder="Ingredientes" type="text">
+      <datalist id="listaing">
+            <option value="queso">
+            <option value="pollo">
+            <option value="canela">
+      </datalist>
+     <input type="submit" name="next" class="next action-button" value="Subir Receta" />
     </div>
   </form>
 

@@ -3,21 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <title>Registro</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/styleJoan.css">
   <link type="text/css" rel="stylesheet" href="css/fontello/css/icon.css">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
 
 <body>
+
+  <header style="background: #9fa8a3;">
+		<a href="index.html"><img src="images/logoletras2.png" alt="Cookido Logo" class="cookidologo"></a>
+
+	</header>
+
+	<div class='barranavegacion'>
+  		<nav id='barranavegacionid'>
+  			<input type='checkbox'/>
+    		<label>
+      			<i class="fa fa-bars">&#8801;</i>
+    		</label>
+
+    		<ul>
+      			<li><a href='index.html'>Inicio</a></li>
+      			<li><a href='buscar.html'>Buscar</a></li>
+      			<li><a href='registro.html'>Registro</a></li>
+      			<li><a href='nueva-receta.html'>Nueva Entrada</a></li>
+      			<li><a href='login.html'>Iniciar Sesión</a></li>
+      			<li><a href='index.html'>Cerrar Sesión</a></li>
+      		</ul>
+  		</nav>
+	</div>
+
   <form id="formulariologin" action="index.html" method="get">
     <div>
       <p>*Todos los campos son obligatorios</p>
-      <input type="text" name="username" pattern="[A-Za-z]+[A-Za-z0-9]{0,15}"  placeholder="Nombre de usuario*"  autofocus>
+      <input type="text" name="username" pattern="[A-Za-z]+[A-Za-z0-9]{6,20}"  placeholder="Nombre de usuario*"  autofocus>
       <input type="text" name="nombre" placeholder="Nombre*" required>
       <input type="text" name="apellidos" placeholder="Apellidos*" required/>
       <input type="email" name="email" placeholder="Email*"  required/>
-      <input type="password" name="contrasena" pattern="[A-Za-z0-9_-]{0,20}" placeholder="Contraseña*" required/>
-      <input type="password" name="repcontrasena" pattern="[A-Za-z0-9_-]{0,20}" placeholder="Confirmar Contraseña*" required/>
+      <input type="password" name="contrasena" pattern="[A-Za-z0-9_-]{8,20}" placeholder="Contraseña*" required/>
+      <input type="password" name="repcontrasena" pattern="[A-Za-z0-9_-]{8,20}" placeholder="Confirmar Contraseña*" required/>
       <input type="submit" name="next" class="next action-button" value="Registrar" />
     </div>
   </form>

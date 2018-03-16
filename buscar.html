@@ -2,13 +2,37 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/styleJoan.css">
   <link type="text/css" rel="stylesheet" href="css/fontello/css/icon.css">
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 
 	<title>Buscar</title>
 </head>
 <body>
+
+	<header style="background: #9fa8a3;">
+		<a href="index.html"><img src="images/logoletras2.png" alt="Cookido Logo" class="cookidologo"></a>
+
+	</header>
+
+	<div class='barranavegacion'>
+			<nav id='barranavegacionid'>
+				<input type='checkbox'/>
+				<label>
+						<i class="fa-bars">&#8801;</i>
+				</label>
+
+				<ul>
+						<li><a href='index.html'>Inicio</a></li>
+						<li><a href='buscar.html'>Buscar</a></li>
+						<li><a href='registro.html'>Registro</a></li>
+						<li><a href='nueva-receta.html'>Nueva Receta</a></li>
+						<li><a href='login.html'>Log In</a></li>
+						<li><a href='index.html'>Log Out</a></li>
+					</ul>
+			</nav>
+	</div>
+
 		<form class="formulariobusqueda" action="resultado.html" method="get">
 	    <div class="formulariobusquedacampos">
 	        <h3>Búsqueda</h3>
@@ -20,9 +44,9 @@
 					<input type="text" name="Autor" placeholder="Autor" required/>
 					<p class="dificultad">Dificultad</p>
 					<select name="dificultad">
-						<option value="facil" selected="selected">Fácil</option>
-						<option value="normal">Normal</option>
-						<option value="difícil">Difícil</option>
+						<option value="facil" selected="selected">Baja</option>
+						<option value="normal">Media</option>
+						<option value="difícil">Alta</option>
 					</select>
 					<input type="submit" name="next" class="next action-button" value="Buscar"/>
 	    </div>
