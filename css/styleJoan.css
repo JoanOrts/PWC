@@ -112,7 +112,8 @@ body>header{
 
 /*----------------- RECETAS INDEX ----------------*/
 
-.articleindex{
+.articleindex, .articlereceta
+{
     /*margin:0 30px;
      background-color: #e3e09f;
      padding: 20px;
@@ -131,7 +132,7 @@ body>header{
      margin-top: 20px;
 }
 
-.articleindex img{
+.articleindex img, .articlereceta img{
     /*height: 300px;
     width: 500px;
     padding: 0;
@@ -156,14 +157,62 @@ body>header{
   width: 50%;
 }
 
-.articleindex p{
+.articleindex p, .articlereceta p{
   text-align: center;
 }
-.articleindex a{
+.articleindex a, .articlereceta a{
   text-align: center;
   text-decoration: none;
   color: black;
 }
+/* ---------------- RECETA ------------*/
+#piefotoreceta{
+  margin-left: 2%;
+  text-align: left;
+  font-size: .9em;
+  font-style: italic; 
+}
+#autoreceta{
+  margin-left: 2%;
+  text-align: left; 
+}
+#autoreceta a:hover{
+  color: #e3e0cf;
+}
+
+.articlereceta h2{
+  text-align: center;
+  font-size: 1.5em;
+}
+.articlereceta ul{
+  margin:0;
+  padding: 0;
+}
+.articlereceta li{
+  list-style-type: none;
+
+}
+
+/* ----------- COMENTARIS -------*/
+#cabeceracoment{
+  margin-top: 40px;
+  text-align: center;
+}
+.comentarios{
+     background: #9fa890;;
+     border: 0 none;
+     border-radius: 3px;
+     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+     padding: 15px 30px;
+     box-sizing: border-box;
+     width: 80%;
+     margin: 0 auto;
+     position: relative;
+     padding: 20px;
+     margin-top: 20px;
+}
+.comentarios
+
 /*-----------------FORMULARI REGISTRE I LOGIN------------------*/
 
 #formulariologin {
