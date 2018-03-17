@@ -193,6 +193,24 @@ body>header{
 
 }
 
+/*-----NUEVA RECETA -----*/
+#fotosanyadidas img{
+  text-align: center;
+   display: block;
+    margin-top: 15px;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 4px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+}
+
+#fotosanyadidas button{
+  margin-bottom: 4%;
+}
+#dificultad,#dificultad>select{
+  margin: 3% 1%;
+}
+
 /* ----------- COMENTARIS -------*/
 #cabeceracoment{
   margin-top: 40px;

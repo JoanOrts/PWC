@@ -33,26 +33,41 @@
   		</nav>
 	</div>
 
-  <form id="formulariologin" action="index.html" method="get">
+  <form id="formulariologin" action="#" method="get">
     <div>
       <p>*Todos los campos son obligatorios</p>
-      <input type="text" name="nombre"  placeholder="Nombre de la receta" required autofocus>
-      ​<textarea name="elaboracion" rows="10" cols="70" placeholder="Elaboración de la receta"></textarea>
-      <input type="number" name="comensales" placeholder="Número de comensales" min="1" max="15">
-      <input type="number" name="tiempoelaboracion" placeholder="Tiempo de elaboración (min)">
+      <input type="text" name="nombre"  placeholder="Nombre de la receta" maxlength="200" required autofocus>
+      ​<textarea name="elaboracion" rows="10" cols="70" placeholder="Elaboración de la receta" required></textarea>
+      <input type="number" name="comensales" placeholder="Número de comensales" min="1" max="15" required>
+      <input type="number" name="tiempoelaboracion" placeholder="Tiempo de elaboración (min)" required>
           <input type="text" name="Autor" placeholder="Autor" required/>
-          <p class="dificultad">Dificultad</p>
-          <select name="dificultad">
+          <label id="dificultad" for="dificultad">Dificultad</label>
+          <select name="dificultad" required>
             <option value="baja" selected="selected">Baja</option>
             <option value="media">Media</option>
             <option value="alta">Alta</option>
           </select>
-      <input list="listaing" placeholder="Ingredientes" type="text">
+      <input list="listaing" placeholder="Ingredientes" type="text" required>
       <datalist id="listaing">
             <option value="queso">
             <option value="pollo">
             <option value="canela">
       </datalist>
+
+      <div id="fotosreceta">
+      <form action="#">
+        <input type="file" name="pic" accept="image/*" value="Seleccionar Foto">
+        <input type="submit" value="Añadir Foto">
+      </form>
+        <div id="fotosanyadidas">
+          <img src="images/receta.jpg" alt="foto receta">
+          <textarea placeholder="Pie de foto" maxlength="250" required></textarea>
+          <button>Eliminar</button>
+          <img src="images/entrada1.jpg" alt="foto receta">
+          <textarea placeholder="Pie de foto" maxlength="250" required></textarea>
+          <button>Eliminar</button>
+        </div>
+      </div>
      <input type="submit" name="next" class="next action-button" value="Subir Receta" />
     </div>
   </form>
