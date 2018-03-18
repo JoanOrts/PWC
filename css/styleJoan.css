@@ -286,6 +286,51 @@ body>header{
 
 /*---------------------FORMULARI BUSQUEDA---------------------------------*/
 
+
+.articleresultado img{
+
+    display: block;
+    margin-left: 4%;
+    margin-right: auto;
+    width: 193%;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+
+}
+
+.contenedor {
+  position: relative;
+  width: 50%;
+}
+
+.articleresultado p{
+  text-align: center;
+}
+.articleresultado a{
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.contenidobusqueda{
+}
+.articleresultado{
+
+    background: #9fa8a3;;
+     border: 0 none;
+     border-radius: 3px;
+     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+     padding: 15px 30px;
+     box-sizing: border-box;
+     width: 50%;
+     margin: 0 auto;
+     position: relative;
+     padding: 20px;
+     margin-top: 20px;
+  
+}
 .formulariobusqueda {
   width: 60%;
   margin: 50px auto;
