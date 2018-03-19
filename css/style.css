@@ -1,301 +1,251 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 
-body{
-	font-family: montserrat, arial, verdana;
-	background: #f1f1f1;
-	/*overflow-y: hidden;*/
-}
+/*------------------GENERAL---------------------------*/
 
 body {margin: 0px;padding-top:0;}
 
-/*Para esconder la barra lateral,
-la horizontal no se esconde porque si
-nos sale es que algo estamos haciendo mal*/
-#element::-webkit-scrollbar {
-    display: none;
-}
-body section{
-    padding: 20px;
+body,html{
+  font-family: montserrat;
+  font-weight:normal;
+  background-color: #c5d5cb;;
 }
 
-
-
-/* HEADER */
-header {
-	width: 100%;
-  position: absolute;
-  top:0;
-  left: 0;
-  height: 200px;
-  text-align: center;
-}
-header a{
-  text-decoration: none;
-  color:black;
-}
-header ul{
-  text-align: center;
-  display: inline-block;
-  padding-right: 10%;
-  margin-top:40px;
-  margin-bottom: 100px;
-}
-header ul li{
-  list-style-type: none;
-  display: inline-block;
-
-}
-header ul li img{
-  margin-bottom: 90%;
-  margin-left: 180%;
-  height: 40px;
-  width: 40px;
-
-}
-header ul li h1{
-  text-align: center;
-}
-
-/* NAVBAR */
-nav{
-	position: absolute;
-	top: 200px; /*172*/
-	background-color: green;
-	width:100%;
-	left:0;
-
-}
-nav ul{
-	margin-top:0;
-	margin-bottom: 0;
+body>header{
 	display: flex;
-    padding: 0;
-    background-color: #333;
+	flex-direction: column;
+	text-align: center;
 }
 
-nav li{
-	list-style-type: none;
-	padding: 10px;
-  	text-align: center;
-  	box-sizing: border-box;
-  	background-color: #9fa8a3;
-  	flex:1;
-  	/*border: 5px solid #ffcc5c;*/
+/*------------------LOGO DE HEADER-----------------------*/
+
+.cookidologo{
+	align-self: center;
+	width: 20%;
 }
-nav li:hover{
-	background-color: #c5d5cb
+
+/*------------------------BARRA DE NAVEGACION-------------------*/
+
+#barranavegacionid{
+  width:auto;
+  min-width:300px;
+  height: 45px;
+  margin:0 auto;
+  position:relative;
+  overflow:no-display;
+  color: #FFF;
+  background: #9fa8a3;
+  border-bottom: 2px solid #9fa8a3;
 }
-nav li a{
+
+#barranavegacionid ul,#barranavegacionid li{
+
+  margin:0 auto;
+  padding:0 0;
+  list-style:none;
+  display: flex;
+}
+
+#barranavegacionid ul{
+  margin-left: 10px;
+  height:45px;
+  width:100%
+}
+
+#barranavegacionid li{
+	float:left;
+	display:inline;
+	position:relative;
+}
+
+#barranavegacionid a{
+	display: block;
+  font-size:120%;
+	line-height: 45px;
+	padding: 0 14px;
 	text-decoration: none;
 	color: black;
 }
+#barranavegacionid li a:hover{
+  color: #e3e0cf;
 
+}
+#barranavegacionid input{display:none;margin:0 0;padding:0 0;width:80px;height:30px;opacity:0;cursor:pointer
+}
+#barranavegacionid label{
+	font:normal 20px Arial;
+  display:none;
+  width:35px;
+  height:36px;
+  line-height:36px;
+  text-align:center;
+  float:right;
+
+}
+/*----------------- ORDENACIÓN ---------------- */
 .ordenacion{
-	display: flex;
-	border:1px solid #9fa8a3;
-	padding: 0;
+  margin: 20px 30px 0 30px;
+  display: flex;
+  border:1px solid #9fa8a3;
+  padding: 0;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
 }
 .ordenacion>li:nth-child(1){
-	margin-left: 20%;
+
 }
 .ordenacion>li:nth-child(1) input{
-	width:300px;
+  width:300px;
 }
 
 .ordenacion>li:nth-child(2){
-	font-size: 13px;
+  font-size: 13px;
 }
+
 .ordenacion li{
-	list-style-type: none;
-	padding: 10px;
-  	text-align: center;
-  	box-sizing: border-box;
-  	flex: 1;
-
+  list-style-type: none;
+  padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
 }
 
+/*----------------- RECETAS INDEX ----------------*/
 
+.articleindex, .articlereceta
+{
+    /*margin:0 30px;
+     background-color: #e3e09f;
+     padding: 20px;
+     margin-top: 20px;*/
 
-body > section{
-  	display: inline-block;
-}
-
-
-
-
-.contenido{
-	margin-top: 240px;
-}
-.articleindex{
-     background-color: #ddd;
+     background: #9fa8a3;;
+     border: 0 none;
+     border-radius: 3px;
+     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+     padding: 15px 30px;
+     box-sizing: border-box;
+     width: 80%;
+     margin: 0 auto;
+     position: relative;
      padding: 20px;
      margin-top: 20px;
 }
 
-.articleindex img{
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-}
+.articleindex img, .articlereceta img{
+    /*height: 300px;
+    width: 500px;
+    padding: 0;
+    align-self: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);*/
 
-/*.logo{
-	color:#00000000;
-	float: left;
-	padding-left: 25px;
-	font-size: 16px;
-	font-weight: bold;
-}
-nav{
-	background-color: #ffffffff;
-	color: #00000000;
-	list-style: none;
-	text-align: right;
-	padding: 20px 0 0 0;
-}
-
-nav li{
-	display: inline-block;
-	padding: 0 25px 0 25px;
-}*/
-
-/*body>nav>ul{
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	max-height: 1.5em;
-	overflow: hidden;
-
-	transition:max-height 1s ease-in-out;
-}
-
-	body>nav>ul>li>a{
-		display: block;
-
-	}
-	body>nav>ul>li{
-		display: block;
-		padding: .2em 0 .2em .2em;
-		text-decoration: none;
-		font-weight: bold;
-	}
-
-	body>nav>ul>li>a:hover{
-		background-color: #555555;
-	}
-
-	body>nav>ul>li:first-of-type>label{
-		font-weight: bold;
-		margin-left:2em;
-		display: inline-block;
-		font-size: 1.5em;
-		cursor: pointer;
-
-		transition: transform 1s ease-in-out;
-	}*/
-
-#checkboxmenu{
-	display: none;
-}
-
-#checkboxmenu:checked+ul{ /*cuando este checked va a cambiar el valor de su hermano ul*/
-	max-height: 20em; /*da igual no va a llegar*/
-}
-
-	#checkboxmenu:checked+ul>li:first-of-type>label{
-		transform: rotate(90deg);
-	}
-#paginacion{
-	padding: 10px;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1.5em;
-}
-#paginacion a{
-	text-decoration: none;
-	color:inherit;
-	background-color: red;
-	padding: 0.2em;
+    display: block;
+    margin-left: 4%;
+    margin-right: auto;
+    width: 193%;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
 
 }
 
-/*FOOTER*/
-
-footer {
-		margin-bottom: 0;
-    margin-left: 0;
-    width: 100%;
-  	background:#9fa8a3;
-		text-align: center;
-	  margin:0 auto;
+.contenedor {
+  position: relative;
+  width: 50%;
 }
 
-.footerseccion{
-	display: inline-block;
-	display: flex;
-	margin-top: 3%;
+.articleindex p, .articlereceta p{
+  text-align: center;
 }
-
-.footerinfo{
-	margin-bottom: 2%;
-}
-
-/*Icons red socials*/
-
-.iconito{
-  color: #c5d5cb;
-}
-
-.iconito:hover{
-  color: #e3e0cf;
-}
-
-.footerinfo a{
+.articleindex a, .articlereceta a{
+  text-align: center;
   text-decoration: none;
-  color: #c5d5cb;
+  color: black;
 }
-
-.footerinfo a:hover {
+/* ---------------- RECETA ------------*/
+#piefotoreceta{
+  margin-left: 2%;
+  text-align: left;
+  font-size: .9em;
+  font-style: italic;
+}
+#autoreceta{
+  margin-left: 2%;
+  text-align: left;
+}
+#autoreceta a:hover,.articleindex a:hover{
   color: #e3e0cf;
 }
 
-
-/*MEDIA QUERIES*/
-
-@media screen and (max-width: 800px){
+.articlereceta h2{
+  text-align: center;
+  font-size: 1.5em;
+}
+.articlereceta .inforeceta{
+  margin:0;
+  padding: 0;
+}
+.articlereceta .inforeceta li{
+  list-style-type: none;
 
 }
-@media screen and (max-width: 600px){
-
-	#formulariologin {
-	  width: 90%;
-
-	}
+.articlereceta #likedislike{
+margin: 0;
 
 }
-
-@media all and (min-width: 480px){
-	body>nav>ul>li{
-		display: inline-block;
-	}
-	body>nav>ul>li:first-of-type>label{
-		display: none;
-	}
-	body>nav>ul>li>a>span:nth-of-type(2){
-		display: none;
-	}
+.articlereceta #likedislike li{
+  list-style-type: none;
+  display: inline-block;
+  float: left;
+  margin:0;
+}
+.articlereceta #likedislike li button{
+  display: inline-block;
 }
 
-@media all and (min-width: 500px;){
-
+/*-----NUEVA RECETA -----*/
+#fotosanyadidas img{
+  text-align: center;
+   display: block;
+    margin-top: 15px;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 4px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
 }
 
-@media all and (min-width: 640px;){
-	body>nav>ul>li>a>span:nth-of-type(2){
-		display: inline-block;
-	}
+#fotosanyadidas button{
+  margin-bottom: 4%;
+}
+#dificultad,#dificultad>select{
+  margin: 3% 1%;
 }
 
-/*Formulari Registre y Login*/
+/* ----------- COMENTARIS -------*/
+#cabeceracoment{
+  margin-top: 40px;
+  text-align: center;
+}
+.comentarios{
+     background: #9fa890;;
+     border: 0 none;
+     border-radius: 3px;
+     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+     padding: 15px 30px;
+     box-sizing: border-box;
+     width: 80%;
+     margin: 0 auto;
+     position: relative;
+     padding: 20px;
+     margin-top: 20px;
+}
+
+
+/*-----------------FORMULARI REGISTRE I LOGIN------------------*/
+
 #formulariologin {
   width: 60%;
   margin: 50px auto;
@@ -341,11 +291,60 @@ footer {
 }
 
 #formulariologin .action-button:hover, #formulariologin .action-button:focus {
-  box-shadow: 0 0 0 2px white;
+  box-shadow: 0 0 0 2px #e3e0cf;
 }
 
-/*Formulari búsqueda*/
+#formulariologin input:hover, #formulariologin input:focus {
+  box-shadow: 0 0 0 3px #e3e0cf;
+}
 
+/*---------------------FORMULARI BUSQUEDA---------------------------------*/
+
+
+.articleresultado img{
+
+    display: block;
+    margin-left: 4%;
+    margin-right: auto;
+    width: 193%;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+
+}
+
+.contenedor {
+  position: relative;
+  width: 50%;
+}
+
+.articleresultado p{
+  text-align: center;
+}
+.articleresultado a{
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.contenidobusqueda{
+}
+.articleresultado{
+
+    background: #9fa8a3;;
+     border: 0 none;
+     border-radius: 3px;
+     box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+     padding: 15px 30px;
+     box-sizing: border-box;
+     width: 50%;
+     margin: 0 auto;
+     position: relative;
+     padding: 20px;
+     margin-top: 20px;
+  
+}
 .formulariobusqueda {
   width: 60%;
   margin: 50px auto;
@@ -363,6 +362,10 @@ footer {
   width: 50%;
   margin: 0 auto;
   position: relative;
+}
+
+.formulariobusquedacampos:not(:first-of-type) {
+  display: none;
 }
 
 .formulariobusqueda input, .formulariobusqueda textarea, .formulariobusqueda select {
@@ -391,31 +394,205 @@ footer {
   margin: 10px 5px;
 }
 
-.formulariobusqueda p {
-  margin-bottom: 5%;
-	font-weight: bold;
-}
-
 .formulariobusqueda .action-button:hover, .formulariobusqueda .action-button:focus {
-  box-shadow: 0 0 0 2px white;
+  box-shadow: 0 0 0 2px #e3e0cf;
 }
 
-.formulariobusqueda h3{
-	font-size:17px;
-	text-align: center;
+.formulariobusqueda input:hover, .formulariobusqueda input:focus {
+  box-shadow: 0 0 0 3px #e3e0cf;
+}
+
+.formulariobusqueda select:hover, .formulariobusqueda select:focus {
+  box-shadow: 0 0 0 3px #e3e0cf;
 }
 
 .dificultad{
   font-size: 15px;
   float:left;
+  font-weight: bold;
 }
 
-/*ACERCA DE------- */
+/*---------------------------------ACERCA DE------------------------*/
 
-.acercade {
-	width: 60%;
-  margin: 50px auto;
-  text-align: center;
+.descrip{
+  width: 96%;
+  margin:0 auto;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
   position: relative;
-	margin: none;
+
+}
+
+.datos_curso{
+  margin-top:3%;
+  text-align: center;
+  padding: 2% 3%;
+  background-color: #9fa8a3;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.joan{
+  width: 20%;
+}
+
+.amador{
+  width: 20%;
+}
+/*------------- PAGINACIÓ ------------*/
+
+#paginacion{
+  padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+#paginacion a{
+  text-decoration: none;
+  color:inherit;/*
+  background-color: #9fa8a3;*/
+  padding: 0.2em 0.6em;
+  display: inline-block;
+  font-size: 0.9em;
+
+}
+#paginacion a:hover{
+  background-color: #e3e0cf;
+}
+
+/*-------------------------------FOOTER--------------------------------*/
+
+footer {
+		margin-bottom: 0;
+    margin-left: 0;
+    width: 100%;
+  	background:#9fa8a3;
+		text-align: center;
+	  margin:0 auto;
+}
+
+.footerseccion{
+	display: inline-block;
+	display: flex;
+	margin-top: 3%;
+}
+
+.footerinfo{
+	margin-bottom: 2%;
+}
+
+/*--------ICONS------------*/
+
+.iconito{
+  color: #c5d5cb;
+}
+
+.iconito:hover{
+  color: #e3e0cf;
+}
+
+.footerinfo a{
+  text-decoration: none;
+  color: #c5d5cb;
+}
+
+.footerinfo a:hover {
+  color: #e3e0cf;
+}
+
+/*---------------------------MEDIA QUERIS---------------------------*/
+
+@media screen and (max-width: 800px){
+
+  .formulariobusqueda {
+    width: 100%;
+  }
+  .formulariobusquedacampos {
+    width: 80%;
+  }
+
+}
+@media screen and (max-width: 600px){
+
+	#formulariologin {
+	  width: 90%;
+	}
+
+  .cookidologo{
+  align-self: center;
+  width: 50%;
+  }
+
+  #barranavegacionid{
+    position:relative;
+    color: #FFF;
+    background: #9fa8a3;
+    border-bottom: 0px solid #222;
+  }
+
+  #barranavegacionid ul{
+    top:100%;
+    left:0;
+    height:auto;
+    display:none;
+    position:absolute;
+    z-index:3;
+    background: #9fa8a3;
+    color: #fff;
+    background-color: #9fa8a3;
+  }
+
+  #barranavegacionid li{
+    width:auto;
+    display:block;
+    float:none;
+  }
+
+  #barranavegacionid input,#barranavegacionid label{
+    margin:0  2%;
+    float:right;
+    display:block;
+    position:absolute;
+  }
+
+  #barranavegacionid input{z-index:10;}
+
+  #barranavegacionid input:checked ~ ul{display:block}
+
+  .fa-bars {
+    color: black;
+  }
+
+  .formulariobusqueda {
+    width: 100%;
+  }
+  .formulariobusquedacampos {
+    width: 80%;
+  }
+
+  .articleIndex{
+    width:145%;
+  }
+
+
+  /*.articleindex img{
+    height: 200px;
+    width: 300px;
+    padding: 0;
+    align-self: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+
+  }*/
+
+  .ordenacion>li:nth-child(1) input{
+  width:150px;
+  }
+  #paginacion a{
+    font-size: 0.8em;
+  }
 }
