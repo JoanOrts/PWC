@@ -28,9 +28,9 @@
       			<li><i class="icon-home"></i><a href='index.html'>Inicio</a></li>
       			<li><i class="icon-search"></i><a href='buscar.html'>Buscar</a></li>
       			<li><i class="icon-user-plus"></i><a href='registro.html'>Registro</a></li>
-      			<li><i class="icon-doc-text"></i><a href='nueva-receta.html'>Nueva Entrada</a></li>
-      			<li><i class="icon-login"></i><a href='login.html'>Iniciar Sesión</a></li>
-      			<li><i class="icon-logout"></i><a href='index.html'>Cerrar Sesión</a></li>
+      			<li><i class="icon-doc-text"></i><a href='nueva-receta.html'>Nueva Receta</a></li>
+      			<li><i class="icon-login"></i><a href='login.html'>Log In</a></li>
+      			<li><i class="icon-logout"></i><a href='index.html'>Log Out</a></li>
       		</ul>
   		</nav>
 	</div>
@@ -55,14 +55,10 @@
 				<li>9</li>
 				<li>6 comentarios</li>
 			</ul>
-			<!-- <div class="inforeceta">
-				<p>Tiempo de elaboración</p>
-				<p>Dificultad</p>
-				<p>Número comensales</p>
-				<p>Votos positivos</p>
-				<p>Votos negativos</p>
-				<p>Numero comentarios</p>
-			</div> -->
+			<ul id="likedislike">
+				<li><button><i class="icon-thumbs-up-alt"></i>Me gusta</button></li>
+				<li><button><i class="icon-thumbs-down-alt"></i>No me gusta</button></li>
+			</ul>
 
 		</article>
 		<h2 id="cabeceracoment">Comentarios</h2>
@@ -83,7 +79,14 @@
 				<a href="#">6</a>
 				<a href="#">&raquo;</a>
 		</div>
-
+		 <form id="formulariologin" action="#" method="get">
+		 	<div>
+		      <p>Escribe tu comentario</p>
+		      <input type="text" name="titulocomentario"  placeholder="Título del comentario" maxlength="50" required>
+		      ​<textarea name="elaboracion" rows="10" cols="70" placeholder="Comentario" required></textarea>
+		      <input type="submit" value="Enviar Comentario">
+			</div>
+		</form>
 	</section>
 
 	<div class="footerseccion">

@@ -176,7 +176,7 @@ body>header{
   margin-left: 2%;
   text-align: left;
 }
-#autoreceta a:hover{
+#autoreceta a:hover,.articleindex a:hover{
   color: #e3e0cf;
 }
 
@@ -184,13 +184,26 @@ body>header{
   text-align: center;
   font-size: 1.5em;
 }
-.articlereceta ul{
+.articlereceta .inforeceta{
   margin:0;
   padding: 0;
 }
-.articlereceta li{
+.articlereceta .inforeceta li{
   list-style-type: none;
 
+}
+.articlereceta #likedislike{
+margin: 0;
+
+}
+.articlereceta #likedislike li{
+  list-style-type: none;
+  display: inline-block;
+  float: left;
+  margin:0;
+}
+.articlereceta #likedislike li button{
+  display: inline-block;
 }
 
 /*-----NUEVA RECETA -----*/
@@ -229,6 +242,7 @@ body>header{
      padding: 20px;
      margin-top: 20px;
 }
+
 
 /*-----------------FORMULARI REGISTRE I LOGIN------------------*/
 
