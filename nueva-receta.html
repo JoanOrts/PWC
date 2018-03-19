@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Nueva Receta</title>
-  <link rel="stylesheet" type="text/css" href="css/styleJoan.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/fontello/css/icon.css">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
@@ -41,8 +41,8 @@
       <input type="number" name="comensales" placeholder="Número de comensales" min="1" max="15" required>
       <input type="number" name="tiempoelaboracion" placeholder="Tiempo de elaboración (min)" required>
           <input type="text" name="Autor" placeholder="Autor" required/>
-          <label id="dificultad" for="dificultad">Dificultad</label>
-          <select name="dificultad" required>
+          <label id="dificultad" for="dificultat">Dificultad</label>
+          <select name="dificultad" id="dificultat">
             <option value="baja" selected="selected">Baja</option>
             <option value="media">Media</option>
             <option value="alta">Alta</option>
@@ -53,12 +53,11 @@
             <option value="pollo">
             <option value="canela">
       </datalist>
+      <input type="submit" value="Añadir Ingrediente">
 
       <div id="fotosreceta">
-      <form action="#">
-        <input type="file" name="pic" accept="image/*" value="Seleccionar Foto">
+        <input type="file" name="pic" accept="image/*">
         <input type="submit" value="Añadir Foto">
-      </form>
         <div id="fotosanyadidas">
           <img src="images/receta.jpg" alt="foto receta">
           <textarea placeholder="Pie de foto" maxlength="250" required></textarea>
@@ -68,6 +67,7 @@
           <button>Eliminar</button>
         </div>
       </div>
+
      <input type="submit" name="next" class="next action-button" value="Subir Receta" />
     </div>
   </form>
