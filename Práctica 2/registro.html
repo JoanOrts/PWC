@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/fontello/css/icon.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+
+<body>
+
+  <header style="background: #9fa8a3;">
+		<a href="index.html"><img src="images/logoletras2.png" alt="Cookido Logo" class="cookidologo"></a>
+
+	</header>
+
+	<div class='barranavegacion'>
+			<nav id='barranavegacionid'>
+				<input type='checkbox'/>
+				<label>
+						<i class="fa-bars">&#8801;</i>
+				</label>
+
+				<ul>
+						<li><a href='index.html'>Inicio</a></li>
+						<li><a href='buscar.html'>Buscar</a></li>
+						<li><a href='registro.html'>Registro</a></li>
+						<li><a href='nueva-receta.html'>Nueva Receta</a></li>
+						<li><a href='login.html'>Log In</a></li>
+						<li><a href='index.html'>Log Out</a></li>
+					</ul>
+			</nav>
+	</div>
+
+  <form id="formulariologin" action="index.html" method="get">
+    <div>
+      <p>*Todos los campos son obligatorios</p>
+      <input type="text" name="username" pattern="[A-Za-z]+[A-Za-z0-9]{6,20}"  placeholder="Nombre de usuario*"  autofocus>
+      <input type="text" name="nombre" placeholder="Nombre*" required>
+      <input type="text" name="apellidos" placeholder="Apellidos*" required/>
+      <input type="email" name="email" placeholder="Email*"  required/>
+      <input type="password" name="contrasena" pattern="[A-Za-z0-9_-]{8,20}" placeholder="Contraseña*" required/>
+      <input type="password" name="repcontrasena" pattern="[A-Za-z0-9_-]{8,20}" placeholder="Confirmar Contraseña*" required/>
+      <input type="submit" name="next" class="next action-button" value="Registrar" />
+    </div>
+  </form>
+
+  <div class="footerseccion">
+    <footer>
+      <div class="footerinfo">
+        <h3>CONTACTO</h3>
+        <p><a href="acerca.html">Sobre nosotros</a></p>
+        <p><a href="#">Volver al inicio de la página</a></p>
+        <a class="iconito" href=""><i class="icon-twitter"></i></a>
+        <a class="iconito" href=""><i class="icon-facebook-rect"></i></a>
+        <a class="iconito" href=""><i class="icon-instagram-filled"></i></a>
+  		  <p>Práctica 1 de la Asigantura Programación de Cliente Web</p>
+        <p>Ingeniería Multimedia 2017-2018</p>
+        <p>© Copyright 2018</p>
+      </div>
+  	</footer>
+ </div>
+
+  </body>
+</html>
