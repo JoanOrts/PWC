@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Login</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link type="text/css" rel="stylesheet" href="css/fontello/css/icon.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link type="text/css" rel="stylesheet" href="fontello/css/icon.css">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script src="javascript.js"></script>
+  <script>comprobarLogin();</script>
 </head>
 
 <body>
@@ -14,31 +16,32 @@
 		<a href="index.html"><img src="images/logoletras2.png" alt="Cookido Logo" class="cookidologo"></a>
 
 	</header>
+  <div id="menujs">
+  	<div class='barranavegacion'>
+  			<nav id='barranavegacionid'>
+  				<input type='checkbox'/>
+  				<label>
+  						<i class="fa-bars">&#8801;</i>
+  				</label>
 
-	<div class='barranavegacion'>
-			<nav id='barranavegacionid'>
-				<input type='checkbox'/>
-				<label>
-						<i class="fa-bars">&#8801;</i>
-				</label>
+  				<ul>
+  						<li><a href='index.html'>Inicio</a></li>
+  						<li><a href='buscar.html'>Buscar</a></li>
+  						<li><a href='registro.html'>Registro</a></li>
+  						<li><a href='nueva-receta.html'>Nueva Receta</a></li>
+  						<li><a href='login.html'>Log In</a></li>
+  						<li><a href='index.html'>Log Out</a></li>
+  					</ul>
+  			</nav>
+  	</div>
+  </div>
 
-				<ul>
-						<li><a href='index.html'>Inicio</a></li>
-						<li><a href='buscar.html'>Buscar</a></li>
-						<li><a href='registro.html'>Registro</a></li>
-						<li><a href='nueva-receta.html'>Nueva Receta</a></li>
-						<li><a href='login.html'>Log In</a></li>
-						<li><a href='index.html'>Log Out</a></li>
-					</ul>
-			</nav>
-	</div>
-
-  <form id="formulariologin" action="index.html" method="get">
+  <form id="formulariologin" method="get" onsubmit="return hacerLogin(this);">
     <div>
       <p>*Todos los campos son obligatorios</p>
-      <input type="text" name="username" pattern="[A-Za-z]+[A-Za-z0-9]{6,20}"  placeholder="Nombre de usuario*" required autofocus>
-      <input type="password" name="contrasena" pattern="[A-Za-z0-9_-]{8,20}" placeholder="Contraseña*">
-     <input type="submit" name="next" class="next action-button" value="Enviar" />
+      <input type="text" id="login" name="login" pattern="[A-Za-z]+[A-Za-z0-9]{0,19}"  placeholder="Nombre de usuario*" required autofocus>
+      <input type="password" name="pwd" pattern="[A-Za-z0-9_-]{8,20}" placeholder="Contraseña*">
+     <input type="submit" name="next" id="myBtn" class="next action-button" value="Enviar" />
     </div>
   </form>
 
@@ -57,6 +60,6 @@
       </div>
   	</footer>
  </div>
-
+ <script>menu();</script>
  </body>
 </html>

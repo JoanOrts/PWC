@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Nueva Receta</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link type="text/css" rel="stylesheet" href="css/fontello/css/icon.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link type="text/css" rel="stylesheet" href="fontello/css/icon.css">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script src="javascript.js"></script>
 </head>
 
 <body>
@@ -15,22 +16,24 @@
 
 	</header>
 
-	 <div class='barranavegacion'>
-      <nav id='barranavegacionid'>
-        <input type='checkbox'/>
-        <label>
-            <i class="fa fa-bars">&#8801;</i>
-        </label>
+  <div id="menujs">
+   <div class='barranavegacion'>
+       <nav id='barranavegacionid'>
+         <input type='checkbox'/>
+         <label>
+             <i class="fa-bars">&#8801;</i>
+         </label>
 
-        <ul>
-            <li><i class="icon-home"></i><a href='index.html'>Inicio</a></li>
-            <li><i class="icon-search"></i><a href='buscar.html'>Buscar</a></li>
-            <li><i class="icon-user-plus"></i><a href='registro.html'>Registro</a></li>
-            <li><i class="icon-doc-text"></i><a href='nueva-receta.html'>Nueva Receta</a></li>
-            <li><i class="icon-login"></i><a href='login.html'>Log In</a></li>
-            <li><i class="icon-logout"></i><a href='index.html'>Log Out</a></li>
-          </ul>
-      </nav>
+         <ul>
+             <li><a href='index.html'>Inicio</a></li>
+             <li><a href='buscar.html'>Buscar</a></li>
+             <li><a href='registro.html'>Registro</a></li>
+             <li><a href='nueva-receta.html'>Nueva Receta</a></li>
+             <li><a href='login.html'>Log In</a></li>
+             <li><a href='index.html'>Log Out</a></li>
+           </ul>
+       </nav>
+   </div>
   </div>
 
   <form id="formulariologin" action="#" method="get">
@@ -87,6 +90,6 @@
       </div>
   	</footer>
  </div>
-
+ <script>menu();</script>
  </body>
 </html>

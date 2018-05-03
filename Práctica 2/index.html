@@ -2,9 +2,10 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-  <link type="text/css" rel="stylesheet" href="css/fontello/css/icon.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <link type="text/css" rel="stylesheet" href="fontello/css/icon.css">
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<script src="javascript.js"></script>
 
 	<title>Inicio</title>
 </head>
@@ -17,23 +18,25 @@
 
 	</header>
 
-	<div class='barranavegacion'>
-  		<nav id='barranavegacionid'>
-  			<input type='checkbox'/>
-    		<label>
-      			<i class="fa fa-bars">&#8801;</i>
-    		</label>
+	<div id="menujs">
+  	<div class='barranavegacion'>
+  			<nav id='barranavegacionid'>
+  				<input type='checkbox'/>
+  				<label>
+  						<i class="fa-bars">&#8801;</i>
+  				</label>
 
-    		<ul>
-      			<li><i class="icon-home"></i><a href='index.html'>Inicio</a></li>
-      			<li><i class="icon-search"></i><a href='buscar.html'>Buscar</a></li>
-      			<li><i class="icon-user-plus"></i><a href='registro.html'>Registro</a></li>
-      			<li><i class="icon-doc-text"></i><a href='nueva-receta.html'>Nueva Receta</a></li>
-      			<li><i class="icon-login"></i><a href='login.html'>Log In</a></li>
-      			<li><i class="icon-logout"></i><a href='index.html'>Log Out</a></li>
-      		</ul>
-  		</nav>
-	</div>
+  				<ul>
+  						<li><a href='index.html'>Inicio</a></li>
+  						<li><a href='buscar.html'>Buscar</a></li>
+  						<li><a href='registro.html'>Registro</a></li>
+  						<li><a href='nueva-receta.html'>Nueva Receta</a></li>
+  						<li><a href='login.html'>Log In</a></li>
+  						<li><a href='index.html'>Log Out</a></li>
+  					</ul>
+  			</nav>
+  	</div>
+  </div>
 
 
 
@@ -41,14 +44,14 @@
 		<ul class="ordenacion">
 		<li id="busqueda"><input type="text" name="busquedaindex" placeholder="Buscar"></li>
 		<li id="filtro"><label for="ordenindex">Ordenar por:</label>
-		<select  name="ordenindex" id="ordenindex">			
+		<select  name="ordenindex" id="ordenindex">
 			<option value="Valoracion">Valoración</option>
 			<option value="Fecha">Fecha</option>
 		</select>
 			<select>
 			<option value="Ascendente">Ascendente</option>
 			<option value="Descendente">Descendente</option>
-		</select>		
+		</select>
 		</li>
 	</ul>
 		<article class="articleindex">
@@ -158,6 +161,7 @@
   	</footer>
  </div>
 
+<script>menu();</script>
 </body>
 
 </html>
