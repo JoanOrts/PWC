@@ -86,7 +86,7 @@ function menu(){
 					html += '</a>';
 					html += '</li>';
 					html += '<li>';
-					html += '<a href="nueva_entrada.html">'+"Nueva entrada";
+					html += '<a href="nueva-receta.html">'+"Nueva receta";
 					html += '</a>';
 					html += '</li>';
 					html += '<li>';
